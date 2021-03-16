@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+    <script charset='UTF-8'>
+      window['adrum-start-time'] = new Date().getTime();
+      window['adrum-app-key'] = "<Enter Key>";
+        window['adrum-start-time'] = new Date().getTime();
+        (function(config){
+            config.appKey = '<Enter Key>';
+            config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+            config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+            config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
+            config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+            config.xd = {enable : false};
+            config.fetch = false;
+      
+        });
+      
+            var CITY = "Mumbai";
+      
+            window['adrum-config'] = {
+                userEventInfo: {
+                    "PageView": function (context) {
+                        return {
+                          userData: {
+                            city: CITY,
+                        }
+                        }
+                    },
+                    "VPageView": function (context) {
+                        return {
+                          userData: {
+                            city: CITY,
+                        }
+                        }
+                    },
+                    "Ajax": function (context) {
+                        return {
+                          userData: {
+                            city: CITY
+                        }
+                        }
+                    }
+                }
+            };
+        </script>
+ <script src='//cdn.appdynamics.com/adrum/adrum-latest.js' type='text/javascript' charset='UTF-8'></script>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
