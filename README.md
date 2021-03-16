@@ -1,6 +1,14 @@
 # Weather
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+Accepts City as input and uses weather api to capture weather details
+
+# AppDynamics Configuration
+
+index.html - Update EUM appkey , EUM end point. Logic to add custom user data (city selected)
+selection.component.ts - code leveraging javascript api to create virtual page event.
+
+
 
 ## Development server
 
